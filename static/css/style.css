@@ -1,0 +1,346 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #000;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+a{
+	color: #000;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 500;
+	color: #000;
+}
+.hidden{
+	display:none;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1200px;
+}
+::placeholder {
+    color: #9B9B9B;
+    opacity: 1;
+  }
+  
+  :-ms-input-placeholder {
+    color: #9B9B9B;
+  }
+  
+  ::-ms-input-placeholder {
+    color: #9B9B9B;
+  }
+
+header {
+	height: 100px;
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+	width: 97%;
+	margin: 0 auto;
+	max-width: 1360px;
+	align-items: center;
+}
+header h1.left {
+	width: 140px;
+}
+header h1.left a {
+	display: block;
+}
+header h1.left a img {
+	display: block;
+	width: 100%;
+}
+header nav.right {
+	display: flex;
+	align-items: center;
+}
+header nav.right span {
+	margin-right: 45px;
+}
+header nav.right a {
+	margin-right: 45px;
+}
+header nav.right a:last-child {
+	margin-right: 0;
+}
+header nav.right a {
+	font-size: 15px;
+}
+/* #spotlight{
+    margin-top: 30px;
+}
+#spotlight nav.menu{
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#spotlight nav.menu ul{
+    display: flex;
+    align-items: center;
+}
+#spotlight nav.menu ul li{
+    margin-right: 30px;
+}
+#spotlight nav.menu ul li:last-child{
+    margin-right: 0;
+}
+#spotlight nav.menu ul li a{
+    
+}
+#spotlight nav.menu ul li a.active{
+    text-decoration: underline;
+}
+#spotlight nav.menu div.search{
+	border: 1px solid #706f6f;
+}
+#spotlight nav.menu div.search input{
+	height:40px;
+	width:300px;
+	padding: 10px;
+	font-size: 16px;
+}
+#spotlight nav.menu div.search button{
+	height:40px;
+	width:40px;
+	padding: 10px;
+	font-size: 16px;
+	text-align: center;
+}
+#spotlight section.content{
+    margin-top: 30px;
+}
+#spotlight section.content ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#spotlight section.content ul li{
+    margin-top: 50px;
+    width:45%;
+    height: 300px;
+    padding: 20px;
+    box-shadow: 0 16px 20px 0 rgba(27, 30, 41, 0.08);
+	
+}
+#spotlight section.content ul li span{
+	font-weight: 500;
+}
+#spotlight section.content ul li span.category{
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+}
+#spotlight section.content ul li h3{
+	margin:10px auto;
+	text-align: center;
+	font-size: 26px;
+}
+#spotlight section.content ul li div.author-date{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	font-size: 14px;
+	font-weight: 600;
+}
+#spotlight section.content ul li p{
+	height:96px;
+	overflow: hidden;
+}
+#spotlight section.content ul li a{
+	display: block;
+	text-align: right;
+	margin-top: 20px;
+	color:blue;
+} */
+/* #singlepost{
+	margin-top:30px;
+}
+#singlepost span{
+	font-weight: 500;
+}
+#singlepost span.category{
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+}
+#singlepost h2{
+	margin:20px auto;
+	text-align: center;
+	font-size: 36px;
+}
+#singlepost div.author-date{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	font-size: 16px;
+	font-weight: 600;
+}
+#singlepost p{
+	
+} */
+#signup, #login{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding:100px 0;
+}
+#signup form.content, #login form.content{
+	display: flex;
+	flex-direction: column;
+	width:500px;
+	border:1px solid #e7e7e7;
+	padding:50px;
+}
+#signup form.content h1, #login form.content h1{
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 32px;
+	font-weight: 600;
+}
+#signup form.content label{
+	
+}
+#signup form.content input, #login form.content input{
+	border: 1px solid #e7e7e7;
+	height:40px;
+	margin-bottom: 30px;
+	padding: 10px;
+	font-size: 16px;
+}
+#signup form.content button, #login form.content button{
+	display: block;
+	width:150px;
+	margin:20px auto;
+	padding:10px 5px;
+	border:1px solid #e7e7e7;
+	text-align: center;
+	border-radius: 8px;
+	background-color: rgb(56, 161, 87);
+	color:#fff;
+	cursor: pointer;
+}
+#signup form.content a, #login form.content a{
+	color:blue;
+	text-align: center;
+	font-size: 14px;
+	text-decoration: underline;
+}
+
+/* #myposts{
+	margin-top: 50px;
+}
+#myposts a.button{
+	width:150px;
+	margin-top:20px;
+	padding:10px 5px;
+	border:1px solid #e7e7e7;
+	text-align: center;
+	border-radius: 8px;
+	color:#fff;
+	cursor: pointer;
+}
+#myposts a.create-post{
+	display: block;
+	background-color: rgb(56, 161, 87);
+	margin-left: auto;
+	margin-bottom: 20px;
+}
+#myposts ul{
+	
+}
+#myposts ul li{
+	border:1px solid #000;
+	padding: 30px;
+}
+#myposts ul li span.category{
+	
+}
+#myposts ul li h2{
+	text-align: center;
+}
+#myposts ul li div.author-date{
+	
+}
+#myposts ul li div.author-date span{
+	margin-right: 50px;
+}
+#myposts ul li p{
+	
+}
+#myposts ul li a.update_btn{
+	display: inline-block;
+	background-color: rgb(34, 22, 204);
+}
+#myposts ul li a.delete_btn{
+	display: inline-block;
+	background-color: rgb(170, 6, 6);
+} */
+/* #createpost, #updatepost{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#createpost form, #updatepost form{
+	width:60%;
+}
+#createpost form label{
+	
+}
+#createpost form input, #createpost form select,
+#updatepost form input, #updatepost form select{
+	border: 1px solid #e7e7e7;
+	height:40px;
+	width:100%;
+	margin-bottom: 50px;
+	padding: 10px;
+	font-size: 16px;
+}
+#createpost form textarea, #updatepost form textarea{
+	border: 1px solid #e7e7e7;
+	height:200px;
+	width:100%;
+	margin-bottom: 50px;
+	padding: 10px;
+	font-size: 16px;
+}
+#createpost form button, #updatepost form button{
+	display: block;
+	width:150px;
+	margin:20px auto;
+	padding:10px 5px;
+	border:1px solid #e7e7e7;
+	text-align: center;
+	border-radius: 8px;
+	background-color: rgb(56, 161, 87);
+	color:#fff;
+	cursor: pointer;
+} */
