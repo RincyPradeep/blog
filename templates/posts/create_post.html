@@ -1,0 +1,25 @@
+{% extends "web/base.html" %} 
+{% load static %}
+
+{% block content %}
+
+<section id="createpost" class="wrapper">
+    <form class="ajax" action="{% url 'posts:create-post' %}" method="POST">
+        {% csrf_token %}
+        <input type="text" name="author" value={{user.id}} hidden/>
+        <label for="category">Category</label>
+        <select name="category" id="category" required>
+            <option></option>
+            {% for category in categories %}
+            <option value="{{category.id}}">{{category.name}}</option>
+            {% endfor %}
+        </select>
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" required/>
+        <label for="description">Description</label>
+        <textarea name="description" id="description" required></textarea><br/>
+        <button type="submit">Add</button>
+    </form>
+</section>
+
+{% endblock %}

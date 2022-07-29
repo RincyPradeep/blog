@@ -1,0 +1,24 @@
+{% extends "web/base.html" %} 
+{% load static %}
+
+{% block content %}
+
+<section id="myposts" class="wrapper">
+    <a class="button create-post" href="{% url 'posts:create-post' %}">Create Post</a>
+    <ul>
+        {% for post in posts %}
+        <li>
+            <span class="category">{{post.category}}</span>           
+            <h2>{{post.title}}</h2>
+            <div class="author-date">
+                <span>{{post.date}}</span>
+            </div>   
+            <p>{{post.description}}</p>
+            <a href="{% url 'posts:update-post' pk=post.id %}" class="update_btn button">Update</a>
+            <a href="{% url 'posts:delete-post' pk=post.id %}" class="delete_btn button" onclick="return confirm('Are you sure?');">Delete</a>
+        </li>
+        {% endfor %}
+    </ul>    
+</section>
+
+{% endblock %}
